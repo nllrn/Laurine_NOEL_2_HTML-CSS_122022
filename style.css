@@ -1,10 +1,233 @@
 /* couleurs à utiliser dans la maquette
-#0065FC
-#DEEBFF
-#D9D9D9
+#0065FC : bleu roi
+#DEEBFF : bleu ciel
+#D9D9D9 : gris
+#F2F2F2 : gris
 */
+
+
+/* code général */
+
+html {
+    font-size: 62.5%;
+}
 
 * {
     max-width: 1400px;
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
+    font-size: 1.7rem;
+}
+
+body {
+    margin: 30px 30px 0px 30px;
+}
+
+/* *** HEADER *** */
+.header {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 30%;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+}
+
+nav a:hover {
+    color: #0065FC;
+    border-top: #0065FC solid 2px;
+    border-bottom: transparent solid 2px
+}
+
+/* *** MAIN *** */
+/* barre de recherche et filtre */
+
+h2 {
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+form {
+    display: flex;
+}
+
+form div {
+    border-radius: 15px 0 0 15px;
+    border: #F2F2F2 solid 1px;
+    padding: 2px;
+}
+
+input {
+    padding: 9px;
+    border: none;
+}
+
+.fa-location-dot {
+    padding: 8px 12px 8px 12px;
+}
+
+.bg-grey {
+    background-color: #F2F2F2;
+}
+
+.bg-blue {
+    background-color: #0065FC;
+    color:white;
+    font-weight: bolder;
+    border-radius: 0 15px 15px 0;
+    border: #F2F2F2 solid 2px;
+    padding: 10px;
+}
+
+.loupe {
+    visibility: hidden;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
+
+a[title] {
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    border-radius: 25px;
+    border:#F2F2F2 solid 2px;
+    padding: 10px;
+    margin: 10px;
+}
+
+a[title]:hover {
+    background-color:#F2F2F2;
+}
+
+.blue {
+    color:#0065FC;
+}
+
+.grey {
+    color:#F2F2F2;
+}
+
+.info {
+    display:flex;
+    align-items: center;
+}
+
+.info i {
+    border: 2px solid #F2F2F2;
+    border-radius: 30px;
+    width: 24px;
+    height: 24px;
+    padding: 10px 0px 5px 15px;
+}
+
+/* sections hébgerments et populaires */
+.cards {
+    display: flex;
+    margin-top: 30px;
+}
+
+/* section hébergements */
+.hebergements, .populaire {
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.hebergements {
+    width: 950px;
+    height: 700px;
+    margin-right: 20px;
+}
+
+.hebergements h2 {
+    margin-left: 20px;
+}
+
+.hebergements button {
+    border: none;
+    font-weight: bolder;
+    font-size: larger;
+    margin-left: 20px;
+    background-color: #F2F2F2;
+}
+
+.cards-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.cards-main img {
+    width: 210px;
+    height: 45%;
+    padding: 10px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.cards-main article, .cards-aside article {
+    background-color: white;
+    margin: 25px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+}
+
+.populaire {
+    margin-left: 20px;
+    width: 420px;
+    height: 700px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards-aside img {
+    width: 137px;
+    height: 144px;
+    padding: 10px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.cards-aside article {
+    display: flex;
+    margin: 20px;
+}
+
+/* section activités à marseille */
+
+
+/* *** FOOTER ***  */
+
+.footer {
+    max-width: 1339px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.footer section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer a {
+    text-decoration: none;
+    color:black;
+    margin: 5px;
 }

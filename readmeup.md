@@ -29,3 +29,7 @@ ne pas oublier l'icon chart <i class="fa-solid fa-chart-line"></i>
 - section 2 : Activités à marseille 
 ce sont des articles tous construits de la même manière
 faire attention au box-shadow
+
+## FOOTER
+
+- footer de 1339px
