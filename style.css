@@ -5,7 +5,7 @@
 #F2F2F2 : gris
 */
 
-
+/* ** DESKTOP ** */
 /* code général */
 
 html {
@@ -145,6 +145,10 @@ a[title]:hover {
     margin-top: 30px;
 }
 
+.hebergements h2, .populaire h2, .activities h2 {
+    margin-left: 20px;
+}
+
 /* section hébergements */
 .hebergements, .populaire {
     border-radius: 20px;
@@ -154,10 +158,6 @@ a[title]:hover {
 .hebergements {
     width: 70%;
     margin-right: 20px;
-}
-
-.hebergements h2 {
-    margin-left: 20px;
 }
 
 .hebergements button {
@@ -180,7 +180,7 @@ a[title]:hover {
 }
 
 .cards-main img {
-    width: 100%;
+    width: 92%;
     height: 100px;
     padding: 10px;
     border-radius: 20px 20px 0px 0px;
@@ -194,7 +194,7 @@ a[title]:hover {
 
 .cards-main article, .cards-aside article, .cards-activities article {
     background-color: white;
-    margin: 14px;
+    margin: 9px 5px 9px 5px;
     border-radius: 20px;
     box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
 }
@@ -265,3 +265,73 @@ article div{
     color:black;
     margin: 5px;
 }
+
+/* ** TABLETTE ** */
+/* modifications à faire en tablette : 
+- enlever les bordures sur les liens navs
+- mettre en display la section hébergements et les plus populaires l'une sur l'autre
+- mettre la section plus populaire en horizontale et plus en verticale
+- réduire la taille des cards activités
+ */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    nav a:hover {
+        border: transparent;
+        color:black;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hebergements {
+        width: auto;
+        margin: 0 0 25px 0;
+    }
+
+    .populaire {
+        width: auto;
+        margin: 25px 0 0 0;
+    }
+
+    .cards-main {
+        margin-bottom: 30px;
+    }
+
+    .cards-aside {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .cards-aside article {
+        width: 32%;
+        height: auto;
+    }
+
+    .cards-aside article div {
+        margin: 0;
+    }
+
+    .activities h2 {
+        margin-left: 25px;
+    }
+
+    .cards-activities article {
+        width:22%;
+    }
+    .cards-activities img {
+        height: 210px;
+    }
+}
+
+
+
+ /*  modifications à faire en portable :
+ - center le logo
+ - mettre les liens nav en dessous avec border-bottom
+ - mettre en display les filtres 2x2
+ - section plus populaire passe en première avec un fond gris
+ - puis hébergement sur fond blanc en display column
+ - puis activités aussi en display column
+ - et footer aussi en display */
