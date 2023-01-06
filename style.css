@@ -52,7 +52,6 @@ nav a:hover {
 
 /* *** MAIN *** */
 /* barre de recherche et filtre */
-
 h2 {
     font-weight: bolder;
     font-size: 2rem;
@@ -93,10 +92,11 @@ input {
 .loupe {
     visibility: hidden;
 }
+
 .filter {
     display: flex;
     align-items: flex-end;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 ul {
@@ -139,6 +139,10 @@ a[title]:hover {
     padding: 10px 0px 5px 15px;
 }
 
+span {
+    margin-left: 15px;
+}
+
 /* sections hébgerments et populaires */
 .cards {
     display: flex;
@@ -172,6 +176,7 @@ a[title]:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding-bottom: 25px;
 }
 
 .cards-main a, .cards-aside a, .cards-activities a {
@@ -211,7 +216,7 @@ a[title]:hover {
 .cards-aside img {
     width: 40%;
     height: 144px;
-    padding: 10px;
+    padding: 12px 5px 12px 12px;
     border-radius: 20px 0px 0px 20px;
     object-fit: cover;
 }
@@ -220,9 +225,16 @@ a[title]:hover {
     display: flex;
 }
 
+/* icones étoiles */
+
+.fa-star {
+    font-size: 12px;
+}
+
 /* section activités à marseille */
 .activities {
     margin-top: 50px;
+    
 }
 .cards-activities {
     display: flex;
@@ -232,12 +244,13 @@ a[title]:hover {
 .cards-activities article {
     width: 100%;
     height: auto;
+    margin: 0 20px 0 20px;
 }
 
 .cards-activities img {
     border-radius: 20px 20px 0px 0px;
     width: 100%;
-    height: 400px;
+    height: 370px;
     object-fit: cover;
 }
 article div{
@@ -252,7 +265,7 @@ article div{
     max-width: 1339px;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 .footer aside {
@@ -273,10 +286,25 @@ article div{
 - mettre la section plus populaire en horizontale et plus en verticale
 - réduire la taille des cards activités
  */
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    body {
+        margin: 30px 50px 0px 50px;
+    }
+
     nav a:hover {
         border: transparent;
-        color:black;
+    }
+
+    .filter {
+        align-items: center;
+    }
+
+    ul {
+        flex-wrap: wrap;
+    }
+
+    li {
+        padding:15px;
     }
 
     .cards {
@@ -291,17 +319,14 @@ article div{
     }
 
     .populaire {
-        width: auto;
+        width: 96%;
         margin: 25px 0 0 0;
-    }
-
-    .cards-main {
-        margin-bottom: 30px;
     }
 
     .cards-aside {
         display: flex;
-        justify-content: space-around;
+        width: inherit;
+        margin-left: 12px;
     }
 
     .cards-aside article {
@@ -310,7 +335,9 @@ article div{
     }
 
     .cards-aside article div {
-        margin: 0;
+        margin: 0px;
+        width: max-content;
+        padding: 5px;
     }
 
     .activities h2 {
@@ -319,15 +346,14 @@ article div{
 
     .cards-activities article {
         width:22%;
+        margin: 0 10px 0 10px;
     }
     .cards-activities img {
-        height: 210px;
+        height: 185px;
     }
 }
 
-
-
- /*  modifications à faire en portable :
+/*  modifications à faire en portable :
  - center le logo
  - mettre les liens nav en dessous avec border-bottom
  - mettre en display les filtres 2x2
@@ -335,3 +361,88 @@ article div{
  - puis hébergement sur fond blanc en display column
  - puis activités aussi en display column
  - et footer aussi en display */
+ 
+ @media screen and (max-width:768px) {
+    body {
+        margin: 0px;
+        max-width: max-content;
+    }
+        
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a:hover {
+        color: #0065FC;
+        border-bottom: #0065FC solid 4px;
+        border-top: transparent solid 2px;
+    }
+
+    .filter {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: auto;
+    }
+    
+    .cards {
+        flex-direction: column-reverse;
+    }
+
+    .cards-main {
+        flex-direction: column;
+    }
+
+    .cards-main article {
+        width:auto;
+    }
+
+    .populaire {
+        margin: 0 0 20px 0;
+        width: auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 0;
+    }
+
+    .hebergements {
+        width: auto;
+        margin:0;
+        background-color: transparent;
+    }
+
+    .hebergements button {
+        visibility: hidden;
+    }
+    
+    .cards-activities {
+        flex-direction: column;
+    }
+    .cards-activities article {
+        width: auto;
+        height: auto;
+        margin: 20px;
+    }
+    .cards-activities img {
+        height: 200px;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .footer aside {
+        margin: 15px;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+}
