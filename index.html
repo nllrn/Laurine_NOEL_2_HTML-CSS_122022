@@ -13,11 +13,11 @@
     <script src="https://kit.fontawesome.com/7c4ea9f910.js" crossorigin="anonymous"></script>
 
     <!-- ** lien css ** -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="header">
+    <header>
         <div class="logo">
             <a href="index.html"><img src="Images/logo/Booki.png" alt="logo du site Booki"></a>
             <nav>
@@ -28,7 +28,7 @@
     </header>
 
     <main>
-        <section>
+        <section class="header">
             <div>
                 <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre-ville ou en pleine nature</p>
@@ -36,19 +36,27 @@
                 <form method="get">
                     <div class="bg-grey">
                         <i class="fa-solid fa-location-dot"></i>
-                        <input type="search">
+                        <input type="search" placeholder="Marseille, France">
+
                     </div>
-                    <button class="bg-blue"><i class="fa-solid fa-magnifying-glass loupe"></i>Rechercher</button>
+                    <button class="bg-blue">
+                        <span class="rechercher">Rechercher</span>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
                 </form>
             </div>
 
             <div class="filter">
                 <h3>Filtres</h3>  
                 <ul> 
-                    <li><a href="#economique" title="filtres"><i class="fa-solid fa-money-bill-wave blue"></i> Économique</a></li>
-                    <li><a href="#familial" title="filtres"><i class="fa-solid fa-person blue"></i> Familial</a></li>
-                    <li><a href="#romantique" title="filtres"><i class="fa-solid fa-heart blue"></i> Romantique</a></li>
-                    <li><a href="#animaux" title="filtres"><i class="fa-solid fa-dog blue"></i> Animaux autorisés</a></li>
+                    <div>
+                        <li><a href="#economique" title="filtres"><i class="fa-solid fa-money-bill-wave blue"></i> Économique</a></li>
+                        <li><a href="#familial" title="filtres"><i class="fa-solid fa-person blue"></i> Familial</a></li>
+                    </div>
+                    <div>
+                        <li><a href="#romantique" title="filtres"><i class="fa-solid fa-heart blue"></i> Romantique</a></li>
+                        <li><a href="#animaux" title="filtres"><i class="fa-solid fa-dog blue"></i> Animaux autorisés</a></li>
+                    </div>
                 </ul>
             </div>
 
