@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Booki</title>
 
     <!-- ** lien google fonts ** -->
@@ -18,6 +19,7 @@
 </head>
 
 <body>
+    <!-- *** HEADER *** -->
     <header>
         <div class="logo">
             <a href="index.html"><img src="Images/logo/Booki.png" alt="logo du site Booki"></a>
@@ -27,20 +29,24 @@
             </nav>
         </div>
     </header>
+    <!-- *** HEADER *** -->
 
+    <!-- *** MAIN *** -->
     <main>
+
+        <!-- ** SECTION FORMULAIRE ET FILTRES ** -->
         <section class="header">
             <div>
                 <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre-ville ou en pleine nature</p>
 
-                <form method="#">
+                <form method="get">
                     <div class="bg-grey">
                         <i class="fa-solid fa-location-dot"></i>
                         <input type="search" placeholder="Marseille, France">
 
                     </div>
-                    <button class="bg-blue" type="submmit">
+                    <button class="bg-blue">
                         <span class="rechercher">Rechercher</span>
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
@@ -64,9 +70,12 @@
                 <span>Plus de 500 logements sont disponibles dans cette ville</span>
             </div>
         </section>
+        <!-- ** SECTION FORMULAIRE ET FILTRES ** -->
 
+        <!-- ** SECTION HÉBERGEMENTS ET POPULAIRES ** -->
         <div class="cards">
 
+            <!-- ** SECTION HÉBERGEMENTS ** -->
             <section class="hebergements bg-grey" id="hebergements">
 
                 <h2>Hébergements à Marseille</h2>
@@ -174,7 +183,9 @@
                 <button>Afficher plus</button>
 
             </section>
+            <!-- ** SECTION HÉBERGEMENTS ** -->
 
+            <!-- ** SECTION POPULAIRES ** -->
             <section class="populaire bg-grey">
 
                 <div class="populaire_infos">
@@ -182,7 +193,7 @@
                     <i class="fa-solid fa-chart-line blue"></i>
                 </div>
 
-                <div class="cards-aside">
+                <div class="cards-populaires">
 
                     <article>
                         <a href="#">
@@ -236,7 +247,10 @@
 
             </section>
         </div>
+        <!-- ** SECTION POPULAIRES ** -->
+        <!-- ** SECTION HÉBERGEMENTS ET POPULAIRES ** -->
 
+        <!-- ** SECTION ACTIVITÉS ** -->
         <section class="activities" id="activities">
             <h2>Activités à Marseille</h2>
 
@@ -274,11 +288,12 @@
                 </article>
             </div>
         </section>
+        <!-- ** SECTION ACTIVITÉS ** -->
     </main>
+    <!-- *** MAIN *** -->
 
-
+    <!-- *** FOOTER *** -->
     <footer class="footer bg-grey">
-
         <aside>
             <h3>À propos</h3>
             <a href="#">Fonctionnement du site</a>
@@ -297,8 +312,8 @@
             <a href="#">Centre d’aide</a>
             <a href="#">Nous contacter</a>
         </aside>
-
     </footer>
+    <!-- *** FOOTER *** -->
 
 </body>
 
