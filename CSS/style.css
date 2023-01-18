@@ -17,7 +17,7 @@ html {
 * {
     max-width: 1400px;
     font-family: "Raleway", sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 body {
@@ -52,11 +52,12 @@ nav a:hover {
     border-top: #0065FC solid 2px;
     border-bottom: transparent solid 2px
 }
+
 /* *** HEADER *** */
 
 /* *** MAIN *** */
 /* SECTION FORMULAIRE ET FILTRES */
-h2 {
+h1 {
     font-weight: bolder;
     font-size: 2rem;
 }
@@ -150,6 +151,7 @@ a[title]:hover {
 span {
     margin-left: 15px;
 }
+
 /* SECTION FORMULAIRE ET FILTRES */
 
 /* SECTIONS HÉBERGEMENTS ET POPULAIRES */
@@ -174,15 +176,24 @@ span {
 
 .hebergements {
     width: 70%;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .hebergements button {
     border: none;
     font-weight: bolder;
     font-size: larger;
-    margin-left: 20px;
+    margin: 10px 0 10px 20px;
     background-color: #F2F2F2;
+}
+
+.hebergements article div {
+    margin-left: 10px;
+}
+
+.hebergements div p,
+.hebergements div h3 {
+    margin: 3px;
 }
 
 .cards-main {
@@ -204,6 +215,7 @@ span {
     width: 30%;
     height: auto;
 }
+
 /* SECTION HÉBERGEMENTS */
 
 /* SECTIONS HÉBERGEMENTS, POPULAIRES ET ACTIVITÉS */
@@ -222,6 +234,7 @@ span {
     border-radius: 20px;
     box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
 }
+
 /* SECTIONS HÉBERGEMENTS, POPULAIRES ET ACTIVITÉS */
 
 /* SECTION POPULAIRE */
@@ -240,9 +253,13 @@ span {
     align-items: center;
 }
 
+.cards-populaires {
+    width: 95%;
+}
+
 .cards-populaires img {
     width: 40%;
-    height: 144px;
+    height: 130px;
     padding: 12px 5px 12px 12px;
     border-radius: 20px 0px 0px 20px;
     object-fit: cover;
@@ -252,11 +269,17 @@ span {
     display: flex;
 }
 
-/* icones étoiles */
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+/* icones étoiles */
 .fa-star {
     font-size: 12px;
 }
+
 /* SECTION POPULAIRE */
 
 /* SECTION ACTIVITÉS */
@@ -283,12 +306,13 @@ span {
 }
 
 article div {
-    margin: 0px 0px 5px 5px;
+    margin: 0 10px 7px 5px;
 }
 
 .cards-activities h3 {
     padding-left: 15px;
 }
+
 /* SECTION ACTIVITÉS */
 /* *** MAIN *** */
 
@@ -310,6 +334,7 @@ article div {
     color: black;
     margin: 5px;
 }
+
 /* *** FOOTER *** */
 /* ** DESKTOP ** */
 
@@ -330,6 +355,7 @@ article div {
     nav a:hover {
         border: transparent;
     }
+
     /* *** HEADER *** */
 
     /* *** MAIN *** */
@@ -345,6 +371,7 @@ article div {
     li {
         padding: 15px;
     }
+
     /* SECTION FORMULAIRE ET FILTRES */
 
     /* SECTIONS HÉBERGEMENTS ET POPULAIRES */
@@ -359,6 +386,7 @@ article div {
         width: auto;
         margin: 0 0 25px 0;
     }
+
     /* SECTION HÉBERGEMENTS */
 
     /* SECTION POPULAIRE */
@@ -379,10 +407,10 @@ article div {
     }
 
     .cards-populaires article div {
-        margin: 0px;
-        width: max-content;
-        padding: 5px;
+        margin: 0 0 0 5px;
+        padding: 0 0 5px 0;
     }
+
     /* SECTION POPULAIRE */
 
     /* SECTION ACTIVITÉS */
@@ -398,9 +426,11 @@ article div {
     .cards-activities img {
         height: 185px;
     }
+
     /* SECTION ACTIVITÉS */
     /* *** MAIN *** */
 }
+
 /* ** TABLETTE ** */
 
 /* ** MOBILE ** */
@@ -427,13 +457,14 @@ article div {
     }
 
     .logo img {
-        width: 10%;
+        width: 25%;
         margin-bottom: 30px;
     }
-    
+
     nav {
         text-align: center;
     }
+
     /* *** HEADER *** */
 
     /* *** MAIN *** */
@@ -480,6 +511,7 @@ article div {
         height: 8px;
         padding: 4px 7px 15px 12px;
     }
+
     /* SECTION FORMULAIRE ET FILTRES */
 
     /* SECTIONS HÉBERGEMENTS ET POPULAIRES */
@@ -509,6 +541,7 @@ article div {
     .hebergements button {
         visibility: hidden;
     }
+
     /* SECTION HÉBERGEMENTS */
 
     /* SECTION POPULAIRE */
@@ -519,6 +552,7 @@ article div {
         align-items: center;
         border-radius: 0;
     }
+
     /* SECTION POPULAIRE */
 
     /* SECTION ACTIVITÉS */
@@ -535,6 +569,7 @@ article div {
     .cards-activities img {
         height: 200px;
     }
+
     /* SECTION ACTIVITÉS */
     /* *** MAIN *** */
 
@@ -549,6 +584,7 @@ article div {
         flex-direction: column;
         align-items: baseline;
     }
+
     /* *** FOOTER *** */
     /* ** MOBILE ** */
 
